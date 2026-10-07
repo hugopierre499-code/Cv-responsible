@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #0d0718;
+    background: #f5f7fa;
+}
+
+/* En-tête et menu (mobile d'abord) */
+.entete {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: #471175;
+    color: #fff;
+}
+.logo { color: #fff; font-weight: bold; text-decoration: none; }
+.burger {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.1rem 0.6rem;
+    cursor: pointer;
+}
+.menu { display: none; width: 100%; flex-direction: column; }
+.menu.ouvert { display: flex; }
+.menu a { color: #fff; text-decoration: none; padding: 0.6rem 0; border-top: 1px solid #ffffff33; }
+.menu a.actif { font-weight: bold; text-decoration: underline; }
+
+/* Contenu */
+main { padding: 1rem; max-width: 900px; margin: 0 auto; }
+section { padding: 1.5rem 0; scroll-margin-top: 4rem; }
+h1 { font-size: 1rem; margin: 0 0 0.5rem; }
+h3 { border-bottom: 2px solid #31125a; padding-bottom: 0.3rem; }
+
+/* Tablette et plus */
+@media (min-width: 768px) {
+    .burger { display: none; }
+    .menu { display: flex; width: auto; flex-direction: row; gap: 1.5rem; }
+    .menu a { border-top: none; padding: 0; }
+    .entete { padding: 1rem 2rem; }
+    main { padding: 2rem; }
+    h1 { font-size: 2.4rem; }
+}
+
+/* Grand écran */
+@media (min-width: 1200px) {
+    body { font-size: 1.1rem; }
+}
+
+/* Stages */
+.stage { margin-bottom: 1.5rem; padding-left: 0.8rem; border-left: 3px solid #471774; }
+.stage h4 { margin: 0; }
+.stage .infos { margin: 0.2rem 0 0.5rem; color: #5b526d; font-size: 0.95rem; }
+.stage ul { margin: 0; }
+
+/* Espace en bas de page : permet à la dernière section de remonter sous l'en-tête */
+main { padding-bottom: 30vh; }

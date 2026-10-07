@@ -1,0 +1,98 @@
+echo "# Cv-resposible" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/hugopierre499-code/Cv-resposible.git
+git push -u origin main
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV en ligne - Aëlis BRUNET-BORIES</title>
+    <link href="page-cv-aelisbb.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="entete">
+    <a class="logo" href="#accueil">Aëlis B-B</a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav id="menu" class="menu">
+        <a href="#accueil">Accueil</a>
+        <a href="#contact">Contact</a>
+        <a href="#langues">Langues</a>
+        <a href="#formation">Formation</a>
+        <a href="#experiences">Stages</a>
+    </nav>
+</header>
+
+<main>
+    <section id="accueil">
+        <h1>Aëlis BRUNET-BORIES</h1>
+        <h4>Bonjour, voici mon CV en ligne</h4>
+    </section>
+
+    <section id="contact">
+        <h3>CONTACT</h3>
+        <ul>
+            <li>[mail]</li>
+            <li>[telephone]</li>
+            <li>Plaisance-du-touch</li>
+        </ul>
+    </section>
+
+    <section id="langues">
+        <h3>LANGUES</h3>
+        <ul>
+            <li><strong>Français</strong> - Natif</li>
+            <li><strong>Anglais</strong> - Avancé (B2)</li>
+        </ul>
+    </section>
+
+    <section id="formation">
+        <h3>FORMATION</h3>
+        <article class="stage">
+            <h4>Terminale Baccalauréat professionnel CIEL</h4>
+            <p class="infos">Lycée privé Les Potiers - Toulouse (31) - 2024 - aujourd’hui</p>
+        </article>
+
+        <article class="stage">
+            <h4>Brevet des collèges</h4>
+            <p class="infos">Collège Labitrie - Tournefeuille (31) - 2023</p>
+        </article>
+    </section>
+
+    <section id="experiences">
+        <h3>EXPERIENCE</h3>
+
+        <article class="stage">
+            <h4>Stagiaire au service Électronique</h4>
+            <p class="infos">SDIS 31 - Colomiers (31) - Juin 2026 (4 semaines)</p>
+            <ul>
+                <li>Maintenance des systèmes radio</li>
+                <li>Réparation de matériel électronique</li>
+                <li>Programmation de systèmes radio</li>
+            </ul>
+        </article>
+
+        <article class="stage">
+            <h4>Stagiaire au service Informatique</h4>
+            <p class="infos">SDIS 31 - Colomiers (31) - Janvier - Février 2026 (4 semaines)</p>
+            <ul>
+                <li>Chef de projet de création d’un wifi public à l’état major des sapeurs-pompiers</li>
+            </ul>
+        </article>
+
+        <article class="stage">
+            <h4>Stage d’observation de Seconde</h4>
+            <p class="infos">Thales Alenia Space - Toulouse (31) - Décembre 2024 (2 semaines)</p>
+        </article>
+    </section>
+</main>
+
+<script src="script-cv.js"></script>
+</body>
+</html>
